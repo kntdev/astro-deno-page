@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<header>
+		<h1>Logo</h1>
+		<nav>
+			<ul class="options">
+				<li class="option">Inicio</li>
+				<li class="option">Menú</li>
+				<li class="option">Locales</li>
+				<li class="option">Contacto</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<aside>
+			<div class="items">
+				<ul>
+					<li>CARTA</li>
+						<ul>
+							<li>Hay pique</li>
+							<li>Va plomo</li>
+							<li>Para el cardumen</li>
+							<li>Leven anclas</li>
+						</ul>
+					<li>BARRA</li>
+						<ul>
+							<li>Mar de clásicos</li>
+							<li>Mar de sabores</li>
+						</ul>
+				</ul>
+			</div>
+		</aside>
+		<section>
+			<h2>Lorem ipsum dolor sit.</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex dolores voluptatem fuga hic eaque ratione aperiam dignissimos nesciunt nobis.</p>
+		</section>
+	</main>
+	<footer>
+		chau
+	</footer>
+</Layout>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	header{
+		width: 100%;
+		border: 2px solid blue;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.items{
+		padding-bottom: 200px;
+	}
+	.items ul{
+		margin-bottom: 20px;
+	}
+	.options{
+		display: flex;
+		gap: 20px;
+		list-style: none;
+	}
+	main {
+		margin: auto;
+		padding: 15px;
+		width: 90%;
+		max-width: 2000px;
+		min-width: 300px;
+		border: 2px solid red;
+		display: grid;
+		grid-template-columns: 25% 1fr;
+		gap: 30px;
+		min-height: 90%;
+	}
+	footer{
+		width: 100%;
+		padding: 20px;
+		background-color: rgb(75, 75, 75);
+	}
+	aside{
+		border: 2px solid green;
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	section{
+		border: 2px solid violet;
+		padding: 10px;
+
+	}
+	
+
+	@media only screen and (max-width: 780px) {
+			main {
+				grid-template-columns: 1fr;
+			}
+}
+</style>
