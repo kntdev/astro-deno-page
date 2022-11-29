@@ -37,6 +37,7 @@ import Card from '../components/Card.astro';
 		<section>
 			<h2>Lorem ipsum dolor sit.</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ex dolores voluptatem fuga hic eaque ratione aperiam dignissimos nesciunt nobis.</p>
+			<h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit doloremque ex officiis tempora dolore veritatis aliquid eius, dignissimos impedit ab odio libero quibusdam pariatur repellendus rem, hic, quisquam necessitatibus totam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, incidunt ab obcaecati culpa ullam temporibus deleniti sit commodi illum perspiciatis necessitatibus non hic voluptas beatae laborum dicta ipsum ipsa porro. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid tempora nisi at commodi quasi delectus id sapiente, odio recusandae aperiam cumque excepturi, magnam hic exercitationem deleniti. Eum magni dolorem exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur nulla accusantium cupiditate quae amet laudantium dolorem blanditiis, illum id reiciendis architecto culpa voluptatem quos recusandae est fuga suscipit obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam accusamus quibusdam obcaecati inventore quis pariatur in dolorem asperiores reiciendis, ipsum vel recusandae, soluta totam aliquam quam laborum! Est, excepturi harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum possimus unde architecto doloribus sequi, ex, quisquam obcaecati temporibus similique iste optio laboriosam debitis delectus consequatur esse eaque dolorem nobis saepe?</h4>
 		</section>
 	</main>
 	<footer>
@@ -80,11 +81,16 @@ import Card from '../components/Card.astro';
 		grid-template-columns: 25% 1fr;
 		gap: 30px;
 		min-height: 90%;
+		margin-bottom: 15px;
+		margin-top: 15px;
 	}
 	footer{
 		width: 100%;
 		padding: 20px;
 		background-color: rgb(75, 75, 75);
+		position: static;
+		bottom: 0;
+		left: 0;
 	}
 	aside{
 		border: 2px solid green;
@@ -96,7 +102,9 @@ import Card from '../components/Card.astro';
 	section{
 		border: 2px solid violet;
 		padding: 10px;
-
+		overflow: scroll;
+		overflow-x: hidden;
+		height: 500px;
 	}
 	
 
