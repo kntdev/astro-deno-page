@@ -1,0 +1,18 @@
+---
+        export function confirmarPrecio(precioLista){
+                if(typeof(precioLista.precio) === 'object'){
+                    if(!precioLista.precio.jarra){
+                        return [`Copa: $${precioLista.precio.copa}`, "/" ,`Botella: $${precioLista.precio.botella}`]
+                        
+                    } else {
+                        return [`Vaso: $${precioLista.precio.copa}`, "/", `Jarra: $${precioLista.precio.jarra}`]
+                    }
+                } else {
+                    return `$${precioLista.precio}`
+                }
+        }
+        export function confirmarTipoObjeto(precioLista){
+            return typeof(precioLista.precio) === 'object'
+        }
+        
+---

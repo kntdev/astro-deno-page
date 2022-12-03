@@ -1,0 +1,48 @@
+---
+import data from '../products.json' assert {type: 'json'}
+import { confirmarTipoObjeto , confirmarPrecio } from '../components/Product.astro'
+
+interface Props {
+section: string;
+}
+const {section = ''} = Astro.props;
+---
+{
+    data.map(product =>{
+            product.seccion
+            if(product.seccion === section){return(
+            <div class="container_product">
+                <div class="nombre-desc">
+                <h1>{product.nombre}</h1>
+                <p>{product.desc}</p>
+            </div>
+            <div class="precio">
+                <h4>{confirmarPrecio(product)}</h4>
+                <h4>{confirmarTipoObjeto(confirmarPrecio(product))}</h4>	
+            </div>
+            </div>
+            )
+        }}
+    )
+}
+
+<style>
+    .container_product{
+		display: flex;
+		justify-content: space-between;
+        align-items: center;
+		margin-bottom: 15px;
+	}
+	.nombre-desc{
+		text-align: start;
+		color: #5a5a5a;
+        width: 70%;
+	}
+	.nombre-desc h1{
+		color: #05778e;
+	}
+	.precio{
+		text-align: end;
+		color: #05778e;
+	}
+</style>

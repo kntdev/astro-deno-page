@@ -1,0 +1,162 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { confirmarTipoObjeto , confirmarPrecio } from '../components/Product.astro'
+import Lista from '../components/Lista.astro';
+---
+
+<Layout title="Welcome to Astro.">
+
+	<main>
+        <aside>
+			<img class="logo" alt="Logo" srcset="../../public/img/logo.png">
+			<div class="items">
+				<ul>
+						<li id="btn-carta">CARTA</li>
+						<ul>
+							<li id="btn-haypique" class="btn-product">Hay pique</li>
+							<li id="btn-vaplomo" class="btn-product">Va plomo</li>
+							<li id="btn-cardumen" class="btn-product">Para el cardumen</li>
+							<li id="btn-anclas" class="btn-product">Leven anclas</li>
+						</ul>
+					<li id="btn-barra">BARRA</li>
+						<ul>
+							<li id="btn-clasicos" class="btn-product">Mar de clásicos</li>
+							<li id="btn-sabores" class="btn-product">Mar de sabores</li>
+						</ul>
+				</ul>
+			</div>
+		</aside>
+		<section id="seccion-products">
+
+			<div class="container-menu haypique" id="haypique">
+				<img class="imagen-carta" src="../../public/img/hay-pique.png" alt="HayPique">
+				<Lista section="haypique"></Lista>
+			</div>
+
+			<div class="container-menu vaplomo" id="vaplomo">
+				<img class="imagen-carta" src="../../public/img/va-plomo.png" alt="VaPlomo">
+				<Lista section="vaplomo"></Lista>
+			</div>
+
+			<div class="container-menu cardumen" id="cardumen">
+				<img class="imagen-carta" src="../../public/img/cardumen.png" alt="Cardumen">
+				<Lista section="cardumen"></Lista>
+			</div>
+
+			<div class="container-menu anclas" id="anclas">
+				<img class="imagen-carta" src="../../public/img/anclas.png" alt="Anclas">
+				<Lista section="anclas"></Lista>
+			</div>
+
+			<div class="container-menu clasicos" id="clasicos">
+				<img class="imagen-carta" src="../../public/img/mar_clasico.png" alt="HayPique">
+				<Lista section="clasicos"></Lista>
+				<h1 class="titulo-lista">Bloodys</h1>
+				<Lista section="bloodys"></Lista>
+				<h1 class="titulo-lista">Cervezas</h1>
+				<Lista section="cervezas"></Lista>
+				<h1 class="titulo-lista">Tintos</h1>
+				<Lista section="tintos"></Lista>
+				<h1 class="titulo-lista">Blancos</h1>
+				<Lista section="blancos"></Lista>
+				<h1 class="titulo-lista">Rosados</h1>
+				<Lista section="rosados"></Lista>
+				<h1 class="titulo-lista">Espumantes</h1>
+				<Lista section="espumantes"></Lista>
+			</div>
+			<div class="container-menu sabores" id="sabores">
+					<img class="imagen-carta" src="../../public/img/mar_sabor.png" alt="HayPique">
+					<Lista section="sabores"></Lista>
+					<h1 class="titulo-lista">Sin alcohol</h1>
+					<Lista section="sinalcohol"></Lista>
+			</div>
+
+		</section>
+    </main>
+
+</Layout>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Rubik', sans-serif;
+	}
+	.logo{
+		width: 200px;
+		height: 200px;
+		padding: 10px;
+	}
+	.items{
+		padding-bottom: 30px;
+		margin-top: 30px;
+	}
+	.items ul{
+		margin-bottom: 20px;
+		cursor: default;
+	}
+	.btn-product{
+		cursor: pointer;
+	}
+	.titulo-lista{
+		text-align: center;
+		padding: 10px;
+		background-color: #045666;
+		color: #8aeaff;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	.imagen-carta{
+		width: 90%;
+		min-width: 250px;
+		height: 100px;
+		margin: 20px 5%;
+		object-fit: contain;
+	}
+	.container-menu{
+		width: 100%;
+	}
+	main {
+		margin: auto;
+		padding: 3%;
+		width: 90%;
+		max-width: 1600px;
+		min-width: 300px;
+		/* border: 2px solid red; */
+		background-color: #045666;
+		display: grid;
+		grid-template-columns: 25% 1fr;
+		gap: 20px;
+		min-height: 90%;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		align-items: center;
+	}
+	aside{
+		color: #f3ea6c;
+		font-size: 1.2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+	section{
+		/* border: 2px solid violet; */
+		background-color: #8aeaff;
+		padding: 30px;
+		overflow: scroll;
+		overflow-x: hidden;
+		height: 500px;
+		/* display: flex; */
+	}
+	@media only screen and (max-width: 780px) {
+			main {
+				grid-template-columns: 1fr;
+			}
+}
+</style>
+<script src="./functions.js"></script>

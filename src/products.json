@@ -1,0 +1,569 @@
+[
+    {
+        "nombre" : "EMPANADA DE LANGOSTINO",
+        "desc" : "Empanada frita de langostinos con muzzarella",
+        "precio" : 750,
+        "seccion" : "haypique",
+        "oferta" : false,
+        "id" : 1
+    },
+    {
+        "nombre" : "EMPANADA DE VIGILIA",
+        "desc" : "Empanada frita de brótola ahumada y muzzarella",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 750, 
+        "id" : 2
+    },
+    {
+        "nombre" : "EMPANADA DE CALAMAR",
+        "desc" : "Empanada frita de calamar con muzzarella",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 720, 
+        "id" : 3
+    },
+    {
+        "nombre" : "PAPAS CON ALIOLI",
+        "desc" : "Papas doble cocción con salsa alioli de la casa",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 750, 
+        "id" : 4
+    },
+    {
+        "nombre" : "PLATO DE CORNALITOS",
+        "desc" : "Fritos, con dip de kétchup y limón",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 1150, 
+        "id" : 5
+    },
+    {
+        "nombre" : "RABAS (Media ración)",
+        "desc" : "Rabas a la “pescadito”",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 1550, 
+        "id" : 6
+    },
+    {
+        "nombre" : "RABAS",
+        "desc" : "Rabas a la “pescadito”",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 2450, 
+        "id" : 7
+    },
+    {
+        "nombre" : "NACHITOS Y MEJILLON",
+        "desc" : "Ensalada rusa, escabeche de mejillones y nachos crocantes",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : "1790 (Pican dos)", 
+        "id" : 8
+    },
+    {
+        "nombre" : "ADICIONAL RACION DE PAN",
+        "desc" : "Pan de masa madre “Salvaje Bakery”",
+        "seccion" : "haypique",
+        "oferta" : false,
+        "precio" : 280, 
+        "id" : 9
+    }
+,
+    {
+        "nombre" : "POBOY ORIGINARIO DE LUISIANA",
+        "desc" : "Sándwich de langostinos acompañado con papas",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 2060, 
+        "id" : 10
+    },
+    {
+        "nombre" : "BOCATA DE CALAMAR",
+        "desc" : "Sándwich en pan ciabatta con calamares fritos, con pico de gallo y salsa tártara, acompañado con papas",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1990, 
+        "id" : 11
+    },
+    {
+        "nombre" : "HOT FISH",
+        "desc" : "Salchicha parrillera (receta propia, pesca blanca, calamar y langostino) acompañado de papas y virutas de batata",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1520, 
+        "id" : 12
+    },
+    {
+        "nombre" : "CAUSA PERUANA",
+        "desc" : "Masa de papa y ají amarillo con relleno de pesca blanca y salsa tártara",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1550, 
+        "id" : 13
+    },
+    {
+        "nombre" : "ENSALADA CESAR",
+        "desc" : "Merluza apanada cítrica, mix de verdes, crutons, aderezo césar y queso",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1360, 
+        "id" : 67
+    },
+    {
+        "nombre" : "CEVICHE VERSION PESCADITO",
+        "desc" : "Pesca del día, leche de tigre y maíz tostado",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 2720, 
+        "id" : 14
+    },
+    {
+        "nombre" : "FISH AND CHIPS",
+        "desc" : "Filet de merluza, tempura de miel y cerveza, acompañado con papas",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1860, 
+        "id" : 15
+    },
+    {
+        "nombre" : "ARROZ CON CALAMARES",
+        "desc" : "Arroz con pimenton ahumado, bolognesa de calamares y cebolla crispy",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1420, 
+        "id" : 68
+    },
+    {
+        "nombre" : "RAGOUT DE HONGOS",
+        "desc" : "Estofado de hongos de pino, champigñones y portobellos con base de arroz graneado",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 1580, 
+        "id" : 16
+    },
+    {
+        "nombre" : "MILA NAPO DE BODEGON",
+        "desc" : "Merluza apanada en panko, tuco de tomate, muzzarella y papas fritas",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 2280, 
+        "id" : 19
+    },
+    {
+        "nombre" : "PAPILLOT CON PESCA DEL DÍA",
+        "desc" : "Abadejo fresco, vegetales y alcaparras horneados en sus propios jugos",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 2720, 
+        "id" : 20
+    },
+    {
+        "nombre" : "PESCA DEL DIA",
+        "desc" : "Al horno con ensalada y papas (stock limitado)",
+        "seccion" : "vaplomo",
+        "oferta" : false,
+        "precio" : 3050, 
+        "id" : 21
+    }
+,
+    {
+        "nombre" : "TABLA DE MAR",
+        "desc" : "cornalitos, merluza, mejillones,rabas, papas fritas, coleslaw y alioli",
+        "seccion" : "cardumen",
+        "oferta" : false,
+        "precio" : 4670, 
+        "id" : 22
+    },
+    {
+        "nombre" : "TRÍO DE MAR",
+        "desc" : "ceviche, arroz con calamares y chicarrón de pescado y mejillones",
+        "seccion" : "cardumen",
+        "oferta" : false,
+        "precio" : 3700, 
+        "id" : 23
+    }
+,
+    {
+        "nombre" : "POSTRE DE DULCE DE LECHE",
+        "desc" : "postre de dulce de leche, caramelo y crema",
+        "seccion" : "anclas",
+        "oferta" : false,
+        "precio" : 630, 
+        "id" : 24
+    },
+    {
+        "nombre" : "FLAN MIXTO",
+        "desc" : "flan tradicional con dulce de leche y crema",
+        "seccion" : "anclas",
+        "oferta" : false,
+        "precio" : 630, 
+        "id" : 25
+    },
+    {
+        "nombre" : "MOUSSE DE DOS CHOCOLATES",
+        "desc" : "chocolate amargo y chocolate de leche con boniato en almíbar",
+        "seccion" : "anclas",
+        "oferta" : false,
+        "precio" : 630, 
+        "id" : 26
+    },
+    {
+        "nombre" : "TORTA DE QUESO",
+        "desc" : "Acompañado con dulce de estación",
+        "seccion" : "anclas",
+        "oferta" : false,
+        "precio" : 870,
+        "id" : 27
+    }
+,
+    {
+        "nombre" : "MARGARITA",
+        "desc" : "",
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 990,
+        "id" : 28
+    },
+    {
+        "nombre" : "DAIQUIRI",
+        "desc" : "",            
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 720,
+        "id" : 29
+    },
+    {
+        "nombre" : "MOJITO",
+        "desc" : "",            
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 720,
+        "id" : 30
+    },
+    {
+        "nombre" : "MINT JULEP",
+        "desc" : "",            
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 990,
+        "id" : 31
+    },
+    {
+        "nombre" : "GIMLET SOUTHSIDE",
+        "desc" : "",            
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 880,
+        "id" : 32
+    },
+    {
+        "nombre" : "NEGRONI",
+        "desc" : "",            
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 990,
+        "id" : 33
+    },
+    {
+        "nombre" : "GIN TONIC",
+        "desc" : "",            
+        "seccion" : "clasicos",
+        "oferta" : false,
+        "precio" : 840,
+        "id" : 34
+    }
+,
+    {
+        "nombre" : "MARY",
+        "desc" : "vodka, pickle/aceituna",
+        "seccion" : "bloodys",
+        "oferta" : false,
+        "precio" : 1260,
+        "id" : 35
+    },
+    {
+        "nombre" : "RED SNAPPER",
+        "desc" : "gin, pickle/aceituna",
+        "seccion" : "bloodys",
+        "oferta" : false,
+        "precio" : 1620,
+        "id" : 36
+    },
+    {
+        "nombre" : "MICHELADA",
+        "desc" : "birra, tajín",
+        "seccion" : "bloodys",
+        "oferta" : false,
+        "precio" : 1260,
+        "id" : 37
+    }
+,
+    {
+        "nombre" : "PATAGONIA LATA",
+        "desc" : "bohemian pilsener - amber larger - 24.7",
+        "seccion" : "cervezas",
+        "oferta" : false,
+        "precio" : 580,
+        "id" : 38
+    },
+    {
+        "nombre" : "CORONA PORRON",
+        "desc" : "330cc",
+        "seccion" : "cervezas",
+        "oferta" : false,
+        "precio" : 520,
+        "id" : 39
+    }
+,
+    {
+        "nombre" : "GUACHEZCO",
+        "desc" : "Reserva Cabernet Franc",
+        "seccion" : "tintos",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 680,
+            "botella" : 2800
+        },
+        "id" : 40
+    },
+    {
+        "nombre" : "ALTO MOLINO",
+        "desc" : "Malbec",
+        "seccion" : "tintos",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 680,
+            "botella" : 2100
+        },
+        "id" : 41
+    },
+    {
+        "nombre" : "MADBIRD",
+        "desc" : "Ancellota",
+        "seccion" : "tintos",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 680,
+            "botella" : 2050
+        },
+        "id" : 42
+    },
+    {
+        "nombre" : "LAGARDE",
+        "desc" : "Blend de tintas",
+        "seccion" : "tintos",
+        "oferta" : false,
+        "precio" : 2800,
+        "id" : 43
+    },
+    {
+        "nombre" : "PIATELLI RESERVA",
+        "desc" : "Malbec",
+        "seccion" : "tintos",
+        "oferta" : false,
+        "precio" : 3200,
+        "id" : 44
+    }
+,
+    {
+        "nombre" : "MADBIRD",
+        "desc" : "Sauvignon Blanc",
+        "seccion" : "blancos",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 680,
+            "botella" : 2050
+        },
+        "id" : 45
+    },
+    {
+        "nombre" : "ALTO MOLINO",
+        "desc" : "Torrontés",
+        "seccion" : "blancos",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 680,
+            "botella" : 2100
+        },
+        "id" : 46
+    },
+    {
+        "nombre" : "LAGARDE",
+        "desc" : "Sauvignon Blanc",
+        "seccion" : "blancos",
+        "oferta" : false,
+        "precio" : 2800,
+        "id" : 47
+    },
+    {
+        "nombre" : "LAGARDE",
+        "desc" : "Viognier",
+        "seccion" : "blancos",
+        "oferta" : false,
+        "precio" : 2800,
+        "id" : 48
+    },
+    {
+        "nombre" : "LAGARDE",
+        "desc" : "Chardonnay",
+        "seccion" : "blancos",
+        "oferta" : false,
+        "precio" : 2800,
+        "id" : 49
+    }
+,
+    {
+        "nombre" : "PIATELLI",
+        "desc" : "Reserva Rosé",
+        "seccion" : "rosados",
+        "oferta" : false,
+        "precio" : 3100,
+        "id" : 50
+    },
+    {
+        "nombre" : "MATIAS MORCOS",
+        "desc" : "Moscatel Naranjo",
+        "seccion" : "rosados",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 750,
+            "botella" : 2800
+        },
+        "id" : 51
+    }
+,
+    {
+        "nombre" : "PIATELLI",
+        "desc" : "Brut nature",
+        "seccion" : "espumantes",
+        "oferta" : false,
+        "precio" : 3840,
+        "id" : 52
+    }
+,
+    {
+        "nombre" : "ISLA VICTORIA",
+        "desc" : "gin, vermú rosso, limón, cordíal de jamaica y frutos rojos",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 740,
+        "id" : 53
+    },
+    {
+        "nombre" : "TAMARINDO JULEP",
+        "desc" : "cynar, tamarindo, agua de rosas, menta, soda",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 740,
+        "id" : 54
+    },
+    {
+        "nombre" : "GUERITA",
+        "desc" : "tequila blanco, triple sec, ananá asada, cilantro y limón",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 1080,
+        "id" : 55
+    },
+    {
+        "nombre" : "AGUITADEMAR",
+        "desc" : "whiskey escocés, limón, especias, sodazo y aceituna",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 920,
+        "id" : 56
+    },
+    {
+        "nombre" : "SAN ROMÁN FLIP",
+        "desc" : "ron blanco, falso lulo, limón y almibar picante",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 920,
+        "id" : 57
+    },
+    {
+        "nombre" : "MANGO #5",
+        "desc" : "ron blanco, mango, manzana, pepino y mambo",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 830,
+        "id" : 58
+    },
+    {
+        "nombre" : "TOMASITO COLLINS",
+        "desc" : "gin beefeater, limón, cilantro, agua de tomate y sodazo",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 830,
+        "id" : 59
+    },
+    {
+        "nombre" : "NIKKEY COCKTAIL",
+        "desc" : "pisco quebranta, peras, huacatay, matcha, aquafaba y limón",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 980,
+        "id" : 60
+    },
+    {
+        "nombre" : "OCUMARE",
+        "desc" : "ron blanco y dorado, coco especiado, ananá y apricot brandy",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 920,
+        "id" : 61
+    },
+    {
+        "nombre" : "SOL DE PACIFICO",
+        "desc" : "pisco quebranta, almibar picante, naranja, limón y un atardecer",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 990,
+        "id" : 62
+    },
+    {
+        "nombre" : "MANGLAR",
+        "desc" : "vodka, pomelo, albahaca, ají cayena y tónica",
+        "seccion" : "sabores",
+        "oferta" : false,
+        "precio" : 830,
+        "id" : 63
+    }
+,
+    {
+        "nombre" : "LIMONADA",
+        "desc" : "limón, menta y jengibre",
+        "seccion" : "sinalcohol",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 420,
+            "jarra" : 1380
+        },
+        "id" : 64
+    },
+    {
+        "nombre" : "BREEZE",
+        "desc" : "pomelo, jamaica y frutos rojos, soda",
+        "seccion" : "sinalcohol",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 420,
+            "jarra" : 1380
+        },
+        "id" : 65
+    },
+    {
+        "nombre" : "CANDELA",
+        "desc" : "naranja, limón, canela y soda",
+        "seccion" : "sinalcohol",
+        "oferta" : false,
+        "precio" : {
+            "copa" : 420,
+            "jarra" : 1380
+        },
+        "id" : 66
+    }
+]

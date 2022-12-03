@@ -12,11 +12,26 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
 	<body>
+		<header>
+			<h1 class="logo-text">Pescadito<span class="cdm-text">CDM</span></h1>
+			<nav>
+				<ul class="options">
+					<li class="option"><a class="btn-option" href="/">Inicio</a></li>
+					<li class="option"><a class="btn-option" href="./menu">Menú</a></li>
+					<li class="option"><a class="btn-option" href="#">Locales</a></li>
+					<li class="option"><a class="btn-option" href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
 		<slot />
+		<footer>
+			<h2>You can buy <a href="#">here.</a></h2>
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -24,15 +39,72 @@ const { title } = Astro.props;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+		font-family: 'Rubik', sans-serif;
 	}
 	body{
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		background-color: #09323b;
+	}
+	
+	header{
+		width: 100%;
+		background-color: #045666;
+		box-shadow: 0px 15px 17px 3px rgba(0,0,0,0.1);
+		-webkit-box-shadow: 0px 15px 17px 3px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0px 15px 17px 3px rgba(0,0,0,0.1);
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo-text{
+		color: #fff;
+		font-weight: 500;
+	}
+	.cdm-text{
+		background: -webkit-linear-gradient(#fffde4, #f3ea6c);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+		font-weight: bold;
+	}
+	.options{
+		display: flex;
+		gap: 20px;
+		list-style: none;
+		font-weight: bold;
+		color: #f3ea6c;
+		font-size: 1.1em;
+	}
+	footer{
+		width: 100%;
+		padding: 20px;
+		background-color: #03171b;
+		position: static;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+	}
+	a{
+		text-decoration: none;
+		color: #f3ea6c;
 	}
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: #F6F6F6;
+	}
+	.btn-option{
+		color: #fff;
+		text-decoration: none;
+		background: #157f94;
+		padding: 10px;
+		border-radius: 5px;
+		transition: 500ms background;
+	}
+	.btn-option:hover{
+		background: #1fb9d8;
+		transition: 500ms background;
 	}
 </style>
