@@ -38,3 +38,4 @@
 		cerrarTodo()
 		document.getElementById("sabores").style.display = "block";
 	})
+

@@ -7,48 +7,48 @@ import Lista from '../components/Lista.astro';
 <Layout title="Welcome to Astro.">
 
 	<main>
-        <aside>
+        <nav>
 			<img class="logo" alt="Logo" srcset="../../public/img/logo.png">
 			<div class="items">
 				<ul>
 						<li id="btn-carta">CARTA</li>
-						<ul>
-							<li id="btn-haypique" class="btn-product">Hay pique</li>
-							<li id="btn-vaplomo" class="btn-product">Va plomo</li>
-							<li id="btn-cardumen" class="btn-product">Para el cardumen</li>
-							<li id="btn-anclas" class="btn-product">Leven anclas</li>
+						<ul class="menu-items" id="menu">
+							<li id="btn-haypique" class="btn-product"><a href="#haypique" class="btn-ancor">Hay pique</a></li>
+							<li id="btn-vaplomo" class="btn-product"><a href="#vaplomo" class="btn-ancor">Va plomo</a></li>
+							<li id="btn-cardumen" class="btn-product"><a href="#cardumen" class="btn-ancor">Para el cardumen</a></li>
+							<li id="btn-anclas" class="btn-product"><a href="#anclas" class="btn-ancor">Leven anclas</a></li>
 						</ul>
 					<li id="btn-barra">BARRA</li>
-						<ul>
-							<li id="btn-clasicos" class="btn-product">Mar de clásicos</li>
-							<li id="btn-sabores" class="btn-product">Mar de sabores</li>
+						<ul class="menu-items" id="barra">
+							<li id="btn-clasicos" class="btn-product"><a href="#clasicos" class="btn-ancor">Mar de clásicos</a></li>
+							<li id="btn-sabores" class="btn-product"><a href="#sabores" class="btn-ancor">Mar de sabores</a></li>
 						</ul>
 				</ul>
 			</div>
-		</aside>
-		<section id="seccion-products">
+		</nav>
+		<article id="seccion-products">
 
-			<div class="container-menu haypique" id="haypique">
+			<section class="container-menu haypique" id="haypique">
 				<img class="imagen-carta" src="../../public/img/hay-pique.png" alt="HayPique">
 				<Lista section="haypique"></Lista>
-			</div>
+			</section>
 
-			<div class="container-menu vaplomo" id="vaplomo">
+			<section class="container-menu vaplomo" id="vaplomo">
 				<img class="imagen-carta" src="../../public/img/va-plomo.png" alt="VaPlomo">
 				<Lista section="vaplomo"></Lista>
-			</div>
+			</section>
 
-			<div class="container-menu cardumen" id="cardumen">
+			<section class="container-menu cardumen" id="cardumen">
 				<img class="imagen-carta" src="../../public/img/cardumen.png" alt="Cardumen">
 				<Lista section="cardumen"></Lista>
-			</div>
+			</section>
 
-			<div class="container-menu anclas" id="anclas">
+			<section class="container-menu anclas" id="anclas">
 				<img class="imagen-carta" src="../../public/img/anclas.png" alt="Anclas">
 				<Lista section="anclas"></Lista>
-			</div>
+			</section>
 
-			<div class="container-menu clasicos" id="clasicos">
+			<section class="container-menu clasicos" id="clasicos">
 				<img class="imagen-carta" src="../../public/img/mar_clasico.png" alt="HayPique">
 				<Lista section="clasicos"></Lista>
 				<h1 class="titulo-lista">Bloodys</h1>
@@ -63,20 +63,23 @@ import Lista from '../components/Lista.astro';
 				<Lista section="rosados"></Lista>
 				<h1 class="titulo-lista">Espumantes</h1>
 				<Lista section="espumantes"></Lista>
-			</div>
-			<div class="container-menu sabores" id="sabores">
+			</section>
+			<section class="container-menu sabores" id="sabores">
 					<img class="imagen-carta" src="../../public/img/mar_sabor.png" alt="HayPique">
 					<Lista section="sabores"></Lista>
 					<h1 class="titulo-lista">Sin alcohol</h1>
 					<Lista section="sinalcohol"></Lista>
-			</div>
+			</section>
 
-		</section>
+		</article>
     </main>
 
 </Layout>
 
 <style>
+	html{
+		scroll-behavior: smooth;
+	}
 	*{
 		margin: 0;
 		padding: 0;
@@ -86,15 +89,44 @@ import Lista from '../components/Lista.astro';
 	.logo{
 		width: 200px;
 		height: 200px;
-		padding: 10px;
 	}
 	.items{
-		padding-bottom: 30px;
-		margin-top: 30px;
+		padding-bottom: 20px;
+		margin-top: 10px;
+		text-align: center;
+		font-size: .75em;
+		
+	}
+	#btn-carta,#btn-barra{
+		font-weight: bold;
+		font-size: 1.4em;
+		cursor: pointer;
+		margin-bottom: 5px;
+	}
+	.menu-items{
+		overflow: hidden;
+		max-height: 0;
+		transition: .7s ease all;
+	}
+	.items ul li:hover,.menu-items li a:hover{
+		color: #fffbc2;
+		/* text-shadow: 0px 0px 20px #ffee00; */
+	}
+	.menu-items.active{
+		transition: .7s ease all;
+		visibility: visible;
+		max-height: 95px;
+		/* overflow: hidden; */
+		
 	}
 	.items ul{
-		margin-bottom: 20px;
 		cursor: default;
+		list-style: none;
+		height: 120px;
+	}
+	.items ul li{
+		font-weight: 100;
+		line-height: 1.1em;
 	}
 	.btn-product{
 		cursor: pointer;
@@ -103,9 +135,10 @@ import Lista from '../components/Lista.astro';
 		text-align: center;
 		padding: 10px;
 		background-color: #045666;
+		box-shadow: 0px 0px 20px 0px rgb(0, 172, 177);
 		color: #8aeaff;
 		margin-top: 30px;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 		font-weight: 100;
 		text-transform: uppercase;
 	}
@@ -113,11 +146,15 @@ import Lista from '../components/Lista.astro';
 		width: 90%;
 		min-width: 250px;
 		height: 100px;
-		margin: 20px 5%;
+		margin: 20px 6%;
 		object-fit: contain;
 	}
 	.container-menu{
 		width: 100%;
+	}
+	.active{
+		font-weight: bold;
+		font-size: 1.4em;
 	}
 	main {
 		margin: auto;
@@ -134,8 +171,9 @@ import Lista from '../components/Lista.astro';
 		margin-bottom: 40px;
 		margin-top: 40px;
 		align-items: center;
+		box-shadow: 0px 0px 80px -10px rgba(0,120,120,0.6);
 	}
-	aside{
+	nav{
 		color: #f3ea6c;
 		font-size: 1.2em;
 		display: flex;
@@ -144,13 +182,14 @@ import Lista from '../components/Lista.astro';
 		align-items: center;
 		padding: 10px;
 	}
-	section{
+	article{
 		/* border: 2px solid violet; */
 		background-color: #8aeaff;
 		padding: 30px;
 		overflow: scroll;
 		overflow-x: hidden;
-		height: 500px;
+		height: 485px;
+		border-radius: 15px;
 		/* display: flex; */
 	}
 	@media only screen and (max-width: 780px) {
@@ -160,3 +199,39 @@ import Lista from '../components/Lista.astro';
 }
 </style>
 <script src="./functions.js"></script>
+<script>
+
+
+
+	const btnCarta = document.getElementById('btn-carta')
+	const btnBarra = document.getElementById('btn-barra')
+	const navLi = document.querySelectorAll('main nav div ul ul li a');
+	const sections = document.querySelectorAll('section')
+	const menu = document.getElementById('seccion-products')
+
+	btnCarta.addEventListener('click',()=>{
+	const carta = document.getElementById('menu').classList.toggle('active')
+	const barra = document.getElementById('barra').classList.remove('active')
+	})
+	btnBarra.addEventListener('click',()=>{
+	const barra = document.getElementById('barra').classList.toggle('active')
+	const carta = document.getElementById('menu').classList.remove('active')
+	})
+
+menu.onscroll = () => {
+	sections.forEach(sec =>{
+		let top = window.scrollY;
+		let offset = sec.offsetTop;
+		let height = sec.offsetHeight
+		let id = sec.getAttribute('ud');
+		
+		if (top >= offset && top < offset + height) {
+			navLi.forEach(links =>{
+				console.log(links)
+				links.classList.remove('active');
+				document.querySelector('main nav div ul ul li a[href*='+ id +']').classList.add('active')
+			})
+		}
+	})
+}
+</script>
