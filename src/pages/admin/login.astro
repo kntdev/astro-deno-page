@@ -1,0 +1,54 @@
+
+    <form action="get">
+        <input type="email" placeholder="Email:" required>
+        <input type="password" placeholder="Password:" required>
+        <button type="submit">Log in</button>
+    </form>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+		    font-family: 'Rubik', sans-serif;
+        }
+        body{
+            background-color: #09323b;
+        }
+        form{
+            display: grid;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px;
+            gap: 40px;
+            background-color: #045666;
+            border-radius: 15px;
+
+        }
+        input{
+            width: 80%;
+            margin: auto;
+            font-size: 1.2em;
+            padding: 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+
+        }
+        button{
+            padding: 10px;
+            width: 30%;
+            font-size: 1.5em;
+            margin: auto;
+            border-radius: 10px;
+            background-color: #01404b;
+            border: 3px solid #f3ea6c;
+		    color: #f3ea6c;
+            cursor: pointer;
+            transition: 200ms background-color;
+        }
+        button:hover{
+            background-color: #12869a;
+            transition: 200ms background-color;
+        }
+    </style>

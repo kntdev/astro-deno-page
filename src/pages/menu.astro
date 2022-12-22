@@ -4,7 +4,7 @@ import { confirmarTipoObjeto , confirmarPrecio } from '../components/Product.ast
 import Lista from '../components/Lista.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="PescaditoCDM » Menú">
 
 	<main>
         <nav>
@@ -144,7 +144,7 @@ import Lista from '../components/Lista.astro';
 	}
 	.imagen-carta{
 		width: 90%;
-		min-width: 250px;
+		min-width: 200px;
 		height: 100px;
 		margin: 20px 6%;
 		object-fit: contain;
@@ -172,6 +172,7 @@ import Lista from '../components/Lista.astro';
 		margin-top: 40px;
 		align-items: center;
 		box-shadow: 0px 0px 80px -10px rgba(0,120,120,0.6);
+
 	}
 	nav{
 		color: #f3ea6c;
@@ -191,6 +192,24 @@ import Lista from '../components/Lista.astro';
 		height: 485px;
 		border-radius: 15px;
 		/* display: flex; */
+		scrollbar-width: auto;
+    	scrollbar-color: #ebff52 #fbfad0;	
+	}
+	article::-webkit-scrollbar {
+    width: 12px;
+	
+	}
+
+	article::-webkit-scrollbar-track {
+    background: #08616e75;
+	border-radius: 0 15px 15px 0;
+	}
+
+	article::-webkit-scrollbar-thumb {
+    background-color: #056073;
+    border-radius: 12px;
+    border: 2px solid #158ca3;
+
 	}
 	@media only screen and (max-width: 780px) {
 			main {

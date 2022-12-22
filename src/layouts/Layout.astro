@@ -11,7 +11,7 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="./img/logo.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
 		<title>{title}</title>
@@ -20,18 +20,26 @@ const { title } = Astro.props;
 		<header>
 			<h1 class="logo-text">Pescadito<span class="cdm-text">CDM</span></h1>
 			<nav>
-				<ul class="options">
+				<ul class="options" id="items-option">
 					<li class="option"><a class="btn-option" href="/">Inicio</a></li>
 					<li class="option"><a class="btn-option" href="./menu">Menú</a></li>
 					<li class="option"><a class="btn-option" href="#">Locales</a></li>
 					<li class="option"><a class="btn-option" href="#">Contacto</a></li>
 				</ul>
 			</nav>
+			<button class="btn-menu" id="btn-menu">
+				<iconify-icon class="btn-menu_icon" icon="mdi:menu"></iconify-icon>
+			</button>
+			<button class="btn-menu_return" id="btn-return">
+				<iconify-icon class="btn-menu_icon_return" icon="ic:sharp-keyboard-return"></iconify-icon>
+			</button>
 		</header>
 		<slot />
 		<footer>
 			<h2>You can buy <a href="#">here.</a></h2>
 		</footer>
+
+		
 	</body>
 </html>
 <style is:global>
@@ -59,6 +67,33 @@ const { title } = Astro.props;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		/* position: relative; */
+	}
+	.btn-menu{
+		display: none;
+		background-color: #157f94;
+		border: 2px solid #5aacbd;
+		border-radius: 5px;
+	}
+	.btn-menu_icon{
+		padding: 4px;
+		font-size: 1.8em;
+		color: #fff;
+	}
+	.btn-menu_return{
+		display: none;
+		z-index: 2;
+		background-color: #157f94;
+		border: 2px solid #5aacbd;
+		border-radius: 5px;
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+	}
+	.btn-menu_icon_return{
+		padding: 10px;
+		font-size: 3em;
+		color: #fff;
 	}
 	.logo-text{
 		color: #fff;
@@ -86,6 +121,7 @@ const { title } = Astro.props;
 		bottom: 0;
 		left: 0;
 		color: #fff;
+		/* z-index: 100; */
 	}
 	a{
 		text-decoration: none;
@@ -107,4 +143,51 @@ const { title } = Astro.props;
 		background: #1fb9d8;
 		transition: 500ms background;
 	}
+	@media only screen and (max-width: 670px) {
+		.btn-menu{
+			display: block;
+		}
+		.options{
+			display: none;
+		}
+		.options.active{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: #09323b;
+			min-height: 100vh;
+			min-width: 100vw;
+			z-index: 1;
+		}
+		.options li{
+			margin: 15px;
+			font-size: 1.5em;
+			width: 100%;
+		}
+		.btn-menu_return.active{
+			display: block;
+		}
+}
 </style>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script>
+	const btnMenu = document.getElementById('btn-menu')
+	const items = document.getElementById('items-option')
+	const itemReturn = document.getElementById('btn-return')
+
+
+	btnMenu.addEventListener('click',()=>{
+		items.classList.add("active")
+		itemReturn.classList.add('active')
+	})
+	itemReturn.addEventListener('click',()=>{
+		items.classList.remove("active")
+		itemReturn.classList.remove('active')
+	})
+</script>
+
+
